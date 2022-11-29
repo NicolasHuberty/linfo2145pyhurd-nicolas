@@ -21,7 +21,7 @@ curl -X GET localhost:3004/catalog/salad
 
 curl -X GET localhost:3004/catalog
 
-curl -X PUT localhost:3004/catalog/modifyProduct -H "Content-Type: application/json" -d '{"productName": "salad", "productCat": "vegetables","productImage":"url", "productPrice":20}'
+curl -X PUT localhost:3004/catalog/modifyProduct -H "Content-Type: application/json" -d '{"userRole":"admin","productName": "salad", "productCat": "vegetables","productImage":"url", "productPrice":20}'
 
 curl -X DELETE localhost:3004/catalog/removeProduct/salad -H "Content-Type: application/json" -d '{"userRole": "admin"}'
 
