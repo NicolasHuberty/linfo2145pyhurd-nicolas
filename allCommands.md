@@ -25,7 +25,7 @@ curl -X PUT localhost:3004/catalog/modifyProduct -H "Content-Type: application/j
 
 curl -X DELETE localhost:3004/catalog/removeProduct/salad -H "Content-Type: application/json" -d '{"userRole": "admin"}'
 
-curl -X DELETE localhost:3004/catalog/removeCategory/vegetable -H "Content-Type: application/json" -d '{"userRole": "admin"}'
+curl -X DELETE localhost:3004/catalog/removeCategory/vegetables -H "Content-Type: application/json" -d '{"userRole": "admin"}'
 ```
 # Purchase microservice
 ```console
