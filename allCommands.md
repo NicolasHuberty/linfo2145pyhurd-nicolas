@@ -2,6 +2,10 @@
 ```console
 wget -O - https://raw.githubusercontent.com/NicolasHuberty/linfo2145pyhurd-nicolas/main/script.sh | bash
 ```
+# Run project in local from $rootRepo
+```console
+sudo chmod +x startLocal.sh & ./startLocal.sh
+```
 # Basket Microservice
 ```console
 
