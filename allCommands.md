@@ -1,5 +1,6 @@
 # Run network project
 Before to do this step, you have to setup correctly two VMs in Azure.
+```console
 wget -O - https://raw.githubusercontent.com/NicolasHuberty/linfo2145pyhurd-nicolas/main/script.sh | bash
 ```
 # Run project in local from $rootRepo/project
