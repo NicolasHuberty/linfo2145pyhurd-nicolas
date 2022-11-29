@@ -1,6 +1,7 @@
 # Run network project
+```console
 wget -O - https://raw.githubusercontent.com/NicolasHuberty/linfo2145pyhurd-nicolas/main/script.sh | bash
-
+```
 # Basket Microservice
 ```console
 
