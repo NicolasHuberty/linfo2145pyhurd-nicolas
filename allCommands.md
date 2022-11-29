@@ -15,7 +15,7 @@ curl --request POST localhost:3008/basket/deletebasket/admin
 ```
 # Catalog microservice
 ```console
-curl -X POST localhost:3004/catalog/addproduct -H "Content-Type: application/json" -d '{"productName": "salad", "productCat":"vegetable","productImage":"url","productPrice":2, "userRole": "admin"}
+curl -X POST localhost:3004/catalog/addproduct -H "Content-Type: application/json" -d '{"productName": "salad", "productCat":"vegetable","productImage":"url","productPrice":2, "userRole": "admin"}'
 
 curl -X GET localhost:3004/catalog/salad
 
