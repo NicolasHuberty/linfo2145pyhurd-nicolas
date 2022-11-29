@@ -45,7 +45,7 @@ curl -X GET localhost:3010/purchase/admin
  
  curl -X POST localhost:3006/logs/itembuy -H "Content-Type: application/json" -d '{"username": "admin", "productQty":10,"productId":"carotte"}'
  
- curl -X POST localhost:3006/logs/performance -H "Content-Type:application/json" -d '{"role":"admin","microservice":"","call":"newproduct","time":4}'
+ curl -X POST localhost:3006/logs/performance -H "Content-Type:application/json" -d '{"role":"admin","microservice":"basket","call":"newproduct","time":4}'
  
  curl -X GET localhost:3006/logs/added/carotte
 
