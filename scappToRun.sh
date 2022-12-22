@@ -136,7 +136,7 @@ services:     # list all services for your application
         condition: on-failure
     networks: [ "scapp-net" ]
     environment:
-      DB_CATALOG http://admin:admin@'${IP}':3003/catalog
+      DB_CATALOG=http://admin:admin@'${IP}':3003/catalog
   visualizer:
     image: dockersamples/visualizer:stable
     ports: [ "80:8080" ]
