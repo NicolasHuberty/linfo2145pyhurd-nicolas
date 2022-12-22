@@ -114,7 +114,7 @@ services:     # list all services for your application
   # Docker GUI for swarms
   scapp-front:
     image: nicolashuberty/scapp-front:latest
-    ports: [ "80:80" ]
+    ports: [ "3002:80" ]
     deploy:
       replicas: 1
       restart_policy:
