@@ -121,12 +121,12 @@ services:     # list all services for your application
         condition: on-failure
     networks: [ "scapp-net" ]
     environment:
-      REACT_APP_AUTH_SERVICE_URL=http://'${IP}':3001 
-      REACT_APP_CATALOG_SERVICE_URL=http://'${IP}':3004
-      REACT_APP_LOG_SERVICE_URL=http://'${IP}':3006
-      REACT_APP_BASKET_SERVICE_URL=http://'${IP}':3008
-      REACT_APP_PURCHASE_SERVICE_URL=http://'${IP}':3010
-      REACT_APP_RECOMMENDATION_SERVICE_URL=http://'${IP}':3011
+      - REACT_APP_AUTH_SERVICE_URL=http://'${IP}':3001 
+      - REACT_APP_CATALOG_SERVICE_URL=http://'${IP}':3004
+      - REACT_APP_LOG_SERVICE_URL=http://'${IP}':3006
+      - REACT_APP_BASKET_SERVICE_URL=http://'${IP}':3008
+      - REACT_APP_PURCHASE_SERVICE_URL=http://'${IP}':3010
+      - REACT_APP_RECOMMENDATION_SERVICE_URL=http://'${IP}':3011
   recommandation-service:
     image: nicolashuberty/scapp-recommendation:latest
     ports: [ "3011:80" ]
@@ -136,7 +136,7 @@ services:     # list all services for your application
         condition: on-failure
     networks: [ "scapp-net" ]
     environment:
-      DB_CATALOG=http://admin:admin@'${IP}':3003/catalog
+      - DB_CATALOG=http://admin:admin@'${IP}':3003/catalog
   visualizer:
     image: dockersamples/visualizer:stable
     ports: [ "80:8080" ]
