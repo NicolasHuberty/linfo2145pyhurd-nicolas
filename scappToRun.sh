@@ -128,7 +128,7 @@ services:     # list all services for your application
       - REACT_APP_PURCHASE_SERVICE_URL=http://'${IP}':3010
       - REACT_APP_RECOMMENDATION_SERVICE_URL=http://'${IP}':3011
   recommandation-service:
-    image: nicolashuberty/scapp-recommendation:latest
+    image: nicolashuberty/scapp-recommandation:latest
     ports: [ "3011:80" ]
     deploy:
       replicas: 1
