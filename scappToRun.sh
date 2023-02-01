@@ -1,4 +1,5 @@
-IP=`curl ifconfig.me`
+IP=localhost
+#IP=`curl ifconfig.me`
 rm -f scapp.yml
 echo "Generating the scapp.yml file..."
 SCAPP='version: "3"
